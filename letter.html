@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>ฮัฌ &amp; ฝ้าย</title>
+<meta name="description" content="ของขวัญเล็กๆ สำหรับฝ้าย 🤍">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#090807">
+<link rel="icon" href="img/heart.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/site.css">
+<script data-page="letter">
+(function(){try{
+  var S=sessionStorage;
+  if(S.getItem('unlocked')!=='1'){location.replace('index.html');return;}
+  if(document.currentScript.dataset.page==='us'&&!S.getItem('preloaded')&&S.getItem('arrive')!=='1'){document.documentElement.classList.add('first-run');}
+}catch(e){}})();
+</script>
+</head>
+<body data-page="letter">
+<main class="experience">
+  <div class="backgrounds" aria-hidden="true">
+    <img class="background is-visible letter-bg" src="img/hand-hold.jpg" alt="" style="--pos:50% 50%">
+  </div>
+  <div class="shade" aria-hidden="true"></div>
+  <img class="floating-logo" id="floating-logo" src="img/heart.svg" alt="">
+
+  <header class="header chrome" data-header>
+    <div class="header-actions"></div>
+  </header>
+
+  <section class="letter chrome" aria-live="polite" aria-label="จดหมาย">
+    <p class="letter-kicker" id="letter-kicker"></p>
+    <div id="letter-lines"></div>
+    <div class="letter-cta" id="letter-cta">
+      <a class="pill solid" href="love.html">ต่อไป →</a>
+    </div>
+  </section>
+</main>
+<script src="js/data.js"></script>
+<script src="js/common.js"></script>
+<script src="js/simple.js"></script>
+</body>
+</html>

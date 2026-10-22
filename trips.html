@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>ฮัฌ &amp; ฝ้าย</title>
+<meta name="description" content="ของขวัญเล็กๆ สำหรับฝ้าย 🤍">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#090807">
+<link rel="icon" href="img/heart.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/site.css">
+<script data-page="trips">
+(function(){try{
+  var S=sessionStorage;
+  if(S.getItem('unlocked')!=='1'){location.replace('index.html');return;}
+  if(document.currentScript.dataset.page==='us'&&!S.getItem('preloaded')&&S.getItem('arrive')!=='1'){document.documentElement.classList.add('first-run');}
+}catch(e){}})();
+</script>
+</head>
+<body data-chapter="trips">
+<main class="experience" data-planet="trips">
+  <div class="backgrounds" aria-hidden="true"></div>
+  <div class="preloader" id="preloader" aria-label="กำลังโหลด">
+    <img alt="" decoding="async">
+    <div class="preloader-shade"></div>
+  </div>
+  <img class="floating-logo" id="floating-logo" src="img/heart.svg" alt="">
+  <div class="preloader-count" id="preloader-count" aria-live="polite"><span id="preloader-value">0</span><span class="percent">%</span></div>
+  <div class="shade" aria-hidden="true"></div>
+
+  <header class="header chrome" data-header>
+    <div class="header-actions"></div>
+  </header>
+
+  <aside class="planet-list chrome" aria-label="ช่วงเวลาของเรา"></aside>
+
+  <canvas id="portal-canvas" class="portal-canvas" aria-hidden="true"></canvas>
+  <section class="portal-wrap chrome" aria-label="ไปต่อ">
+    <div class="portal-heading">
+      <span>ต่อไป:</span>
+      <span><span id="next-number">[02]</span> <strong id="next-name"></strong></span>
+    </div>
+    <button class="portal" id="portal" type="button" aria-label="ไปต่อ">
+      <img id="portal-image" alt="">
+    </button>
+  </section>
+
+  <section class="planet-content chrome" aria-live="polite">
+    <h1 id="planet-title"></h1>
+    <dl id="facts"></dl>
+  </section>
+
+  <div class="loading" aria-hidden="true">กำลังไป…</div>
+</main>
+<script src="js/data.js"></script>
+<script src="js/common.js"></script>
+<script src="js/chapter.js"></script>
+</body>
+</html>

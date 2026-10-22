@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>ฮัฌ &amp; ฝ้าย</title>
+<meta name="description" content="ของขวัญเล็กๆ สำหรับฝ้าย 🤍">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#090807">
+<link rel="icon" href="img/heart.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/site.css">
+<script data-page="love">
+(function(){try{
+  var S=sessionStorage;
+  if(S.getItem('unlocked')!=='1'){location.replace('index.html');return;}
+  if(document.currentScript.dataset.page==='us'&&!S.getItem('preloaded')&&S.getItem('arrive')!=='1'){document.documentElement.classList.add('first-run');}
+}catch(e){}})();
+</script>
+</head>
+<body data-page="love">
+<main class="experience">
+  <div class="backgrounds" aria-hidden="true">
+    <img class="background is-visible first" src="img/boat-heart.jpg" alt="" style="--pos:50% 50%">
+  </div>
+  <div class="shade" aria-hidden="true"></div>
+  <img class="floating-logo" id="floating-logo" src="img/heart.svg" alt="">
+
+  <header class="header chrome" data-header>
+    <div class="header-actions"></div>
+  </header>
+
+  <section class="love-center chrome">
+    <button class="love-heart" id="love-heart" type="button" aria-label="ส่งหัวใจ"><span class="hshape"></span></button>
+    <div class="love-hint">แตะที่หัวใจ 🤍</div>
+    <div class="love-actions">
+      <a class="pill" href="letter.html">← อ่านจดหมายอีกครั้ง</a>
+      <a class="pill solid" href="us.html" id="replay">เล่นใหม่ตั้งแต่ต้น ↺</a>
+    </div>
+  </section>
+
+  <section class="planet-content chrome" aria-live="polite">
+    <h1 id="planet-title"></h1>
+    <dl id="facts"></dl>
+  </section>
+</main>
+<script src="js/data.js"></script>
+<script src="js/common.js"></script>
+<script src="js/simple.js"></script>
+</body>
+</html>
